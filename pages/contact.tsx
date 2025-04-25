@@ -114,7 +114,7 @@ const Contact: NextPage = () => {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              Have a question or want to discuss a collaboration? Send me a message and I'll get back to you as soon as possible.
+              Have a question or want to discuss a collaboration? Send me a message and I&apos;ll get back to you as soon as possible.
             </motion.p>
             <motion.div 
               className="h-1 w-20 bg-accent mx-auto rounded mt-6"
@@ -235,7 +235,7 @@ const Contact: NextPage = () => {
                   </div>
                   <h3 className="text-2xl font-bold text-white mb-2">Message Sent!</h3>
                   <p className="text-gray-300">
-                    Thank you for getting in touch. I'll respond to your message as soon as possible.
+                    Thank you for getting in touch. I&apos;ll respond to your message as soon as possible.
                   </p>
                 </motion.div>
               ) : (

@@ -278,7 +278,7 @@ const Home: NextPage = () => {
               </div>
               <div className="relative z-10 bg-gray-900/80 backdrop-blur-md p-8 rounded-xl border border-accent/10 shadow-xl">
                 <p className="text-gray-200 text-lg italic mb-6">
-                  "An exceptional student who demonstrates remarkable analytical thinking and a profound understanding of constitutional law principles. Their research work shows great promise."
+                  &quot;An exceptional student who demonstrates remarkable analytical thinking and a profound understanding of constitutional law principles. Their research work shows great promise.&quot;
                 </p>
                 <div className="flex items-center">
                   <div className="w-12 h-12 bg-accent/20 rounded-full flex items-center justify-center text-accent font-bold text-xl">
@@ -305,7 +305,7 @@ const Home: NextPage = () => {
               </div>
               <div className="relative z-10 bg-gray-900/80 backdrop-blur-md p-8 rounded-xl border border-accent/10 shadow-xl">
                 <p className="text-gray-200 text-lg italic mb-6">
-                  "Demonstrates exceptional advocacy skills both in written and oral presentations. Their commitment to human rights law is evident in every case they approach."
+                  &quot;Demonstrates exceptional advocacy skills both in written and oral presentations. Their commitment to human rights law is evident in every case they approach.&quot;
                 </p>
                 <div className="flex items-center">
                   <div className="w-12 h-12 bg-accent/20 rounded-full flex items-center justify-center text-accent font-bold text-xl">
