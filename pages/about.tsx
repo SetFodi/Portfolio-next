@@ -62,7 +62,7 @@ const About: NextPage = () => {
     {
       year: "2022",
       title: "Legal Research Publication",
-      description: "Co-authored paper on 'Digital Rights and Constitutional Protections in Georgia'"
+      description: "Co-authored paper on &apos;Digital Rights and Constitutional Protections in Georgia&apos;"
     },
     {
       year: "2021",
@@ -79,7 +79,7 @@ const About: NextPage = () => {
         <div className="absolute top-0 inset-x-0 h-40 bg-gradient-to-b from-gray-900 to-transparent z-0"></div>
         <div className="absolute -top-24 -right-24 w-96 h-96 bg-accent/10 rounded-full blur-3xl"></div>
         <div className="absolute top-1/3 -left-24 w-72 h-72 bg-accent/5 rounded-full blur-3xl"></div>
-        
+
         <div className="max-w-7xl mx-auto px-6 pt-10 relative z-10">
           <motion.div
             className="text-center mb-16"
@@ -106,7 +106,7 @@ const About: NextPage = () => {
           </motion.div>
         </div>
       </section>
-      
+
       {/* Main Content Section */}
       <section className="py-10 px-6 bg-gradient-to-b from-gray-900 to-gray-800">
         <div className="max-w-7xl mx-auto">
@@ -319,7 +319,7 @@ const About: NextPage = () => {
           </div>
         </div>
       </section>
-      
+
       {/* CTA Section */}
       <section className="py-20 px-6 bg-gray-800">
         <div className="max-w-4xl mx-auto text-center">

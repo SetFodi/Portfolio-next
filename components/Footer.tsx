@@ -1,3 +1,4 @@
+import React from 'react';
 import Link from 'next/link';
 import { FaFacebook, FaInstagram, FaLinkedin, FaGavel, FaEnvelope, FaArrowUp } from 'react-icons/fa';
 import { motion } from 'framer-motion';
@@ -56,7 +57,7 @@ const Footer = () => {
                 href="https://www.facebook.com/temotunadze" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                whileHover={{ scale: 1.2, color: '#1877F2' }}
+                whileHover={{ scale: 1.2, color: "#1877F2" }}
                 whileTap={{ scale: 0.9 }}
                 className="text-gray-400 hover:text-white transition-colors"
                 aria-label="Facebook"
@@ -67,7 +68,7 @@ const Footer = () => {
                 href="https://www.instagram.com/tunadzetemo/" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                whileHover={{ scale: 1.2, color: '#E1306C' }}
+                whileHover={{ scale: 1.2, color: "#E1306C" }}
                 whileTap={{ scale: 0.9 }}
                 className="text-gray-400 hover:text-white transition-colors"
                 aria-label="Instagram"
@@ -78,7 +79,7 @@ const Footer = () => {
                 href="https://linkedin.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                whileHover={{ scale: 1.2, color: '#0A66C2' }}
+                whileHover={{ scale: 1.2, color: "#0A66C2" }}
                 whileTap={{ scale: 0.9 }}
                 className="text-gray-400 hover:text-white transition-colors"
                 aria-label="LinkedIn"
