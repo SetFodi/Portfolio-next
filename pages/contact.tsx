@@ -147,6 +147,7 @@ const Contact: NextPage = () => {
                 />
               </h2>
               
+
               <motion.div
                 variants={containerVariants}
                 initial="hidden"
@@ -170,7 +171,7 @@ const Contact: NextPage = () => {
                   </motion.div>
                 ))}
               </motion.div>
-              
+
               {/* Additional Information */}
               <motion.div
                 className="mt-12 p-6 rounded-lg bg-gray-800/50 backdrop-blur-sm border border-accent/20 shadow-lg"
@@ -221,7 +222,7 @@ const Contact: NextPage = () => {
                   transition={{ duration: 1, delay: 0.5 }}
                 />
               </h2>
-              
+
               {/* Success Message */}
               {isSubmitted ? (
                 <motion.div
@@ -270,7 +271,6 @@ const Contact: NextPage = () => {
                         >
                           Name
                         </label>
-                        {/* Animated bottom border */}
                         <div className={`absolute bottom-0 left-0 h-0.5 bg-accent transition-all duration-300 ${focusedField === 'name' ? 'w-full' : 'w-0'}`}></div>
                       </motion.div>
 
@@ -298,7 +298,6 @@ const Contact: NextPage = () => {
                         >
                           Email
                         </label>
-                        {/* Animated bottom border */}
                         <div className={`absolute bottom-0 left-0 h-0.5 bg-accent transition-all duration-300 ${focusedField === 'email' ? 'w-full' : 'w-0'}`}></div>
                       </motion.div>
                     </div>
@@ -331,7 +330,6 @@ const Contact: NextPage = () => {
                       >
                         Subject
                       </label>
-                      {/* Animated bottom border */}
                       <div className={`absolute bottom-0 left-0 h-0.5 bg-accent transition-all duration-300 ${focusedField === 'subject' ? 'w-full' : 'w-0'}`}></div>
                     </motion.div>
 
@@ -359,7 +357,6 @@ const Contact: NextPage = () => {
                       >
                         Message
                       </label>
-                      {/* Animated bottom border */}
                       <div className={`absolute bottom-0 left-0 h-0.5 bg-accent transition-all duration-300 ${focusedField === 'message' ? 'w-full' : 'w-0'}`}></div>
                     </motion.div>
 
