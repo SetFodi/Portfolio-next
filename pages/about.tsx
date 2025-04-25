@@ -17,12 +17,10 @@ import {
 } from 'react-icons/fa';
 
 const About: NextPage = () => {
-  // Scroll animations
   const { scrollYProgress } = useScroll();
   const scale = useTransform(scrollYProgress, [0, 1], [1, 0.9]);
   const opacity = useTransform(scrollYProgress, [0, 0.3, 1], [1, 1, 0.5]);
-  
-  // Animation variants
+
   const fadeIn = {
     hidden: { opacity: 0, y: 40 },
     visible: { 
@@ -31,7 +29,7 @@ const About: NextPage = () => {
       transition: { duration: 0.8, ease: "easeOut" }
     }
   };
-  
+
   const staggerContainer = {
     hidden: { opacity: 0 },
     visible: {
@@ -41,8 +39,7 @@ const About: NextPage = () => {
       }
     }
   };
-  
-  // Skills data
+
   const skills = [
     { icon: <FaGavel />, text: "Civil Litigation" },
     { icon: <FaUserGraduate />, text: "Constitutional Law" },
@@ -51,8 +48,7 @@ const About: NextPage = () => {
     { icon: <FaUniversity />, text: "Legal Writing" },
     { icon: <FaGlobe />, text: "International Law" }
   ];
-  
-  // Timeline data
+
   const timeline = [
     {
       year: "2023",
@@ -120,14 +116,9 @@ const About: NextPage = () => {
               transition={{ duration: 1, ease: 'easeOut' }}
             >
               <div className="relative group">
-                {/* Glow effect */}
                 <div className="absolute -inset-2 bg-gradient-to-tr from-accent/20 to-transparent rounded-2xl blur-xl opacity-40 group-hover:opacity-60 transition-all duration-700"></div>
-                
-                {/* Border frame */}
                 <div className="absolute inset-0 border-2 border-accent/30 rounded-2xl transform -rotate-1 group-hover:rotate-0 transition-transform duration-500"></div>
                 <div className="absolute inset-0 border-2 border-accent/20 rounded-2xl transform rotate-1 group-hover:rotate-0 transition-transform duration-500"></div>
-                
-                {/* Image */}
                 <div className="relative rounded-2xl overflow-hidden shadow-2xl transform group-hover:scale-[1.01] transition-transform duration-500">
                   <Image
                     src="/profile.jpg"
@@ -136,11 +127,7 @@ const About: NextPage = () => {
                     className="rounded-2xl"
                     alt="Profile"
                   />
-                  
-                  {/* Overlay gradient */}
                   <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent opacity-70"></div>
-                  
-                  {/* Image caption */}
                   <div className="absolute bottom-0 inset-x-0 p-6">
                     <div className="flex items-center space-x-4">
                       <motion.div
@@ -157,10 +144,7 @@ const About: NextPage = () => {
                   </div>
                 </div>
               </div>
-              
-              {/* Stats Cards */}
               <div className="grid grid-cols-3 gap-4 mt-6">
-                {/* Card 1 */}
                 <motion.div
                   whileHover={{ y: -8 }}
                   className="p-4 bg-gray-800/80 backdrop-blur-md rounded-xl border border-accent/20 shadow-lg text-center"
@@ -170,7 +154,6 @@ const About: NextPage = () => {
                   <p className="text-xs text-gray-400">Moot Court Cases</p>
                 </motion.div>
 
-                {/* Card 2 */}
                 <motion.div
                   whileHover={{ y: -8 }}
                   className="p-4 bg-gray-800/80 backdrop-blur-md rounded-xl border border-accent/20 shadow-lg text-center"
@@ -180,7 +163,6 @@ const About: NextPage = () => {
                   <p className="text-xs text-gray-400">GPA</p>
                 </motion.div>
 
-                {/* Card 3 */}
                 <motion.div
                   whileHover={{ y: -8 }}
                   className="p-4 bg-gray-800/80 backdrop-blur-md rounded-xl border border-accent/20 shadow-lg text-center"
@@ -191,7 +173,7 @@ const About: NextPage = () => {
                 </motion.div>
               </div>
             </motion.div>
-            
+
             {/* About Content */}
             <motion.div
               className="order-1 md:order-2"
@@ -227,7 +209,7 @@ const About: NextPage = () => {
                   variants={fadeIn}
                   className="text-lg text-gray-300 leading-relaxed"
                 >
-                  With a deep understanding of the legal system, I have worked on <span className="text-accent font-semibold">moot court cases, legal research papers, and pro bono consulting</span>. 
+                  With a deep understanding of the legal system, I have worked on <span className="text-accent font-semibold">moot court cases, legal research papers, and pro bono consulting</span>.
                   My experience extends to <span className="text-accent font-semibold">human rights law, international law, and legal writing</span>.
                 </motion.p>
                 
@@ -247,7 +229,7 @@ const About: NextPage = () => {
                     ))}
                   </div>
                 </motion.div>
-                
+
                 {/* Timeline/Experience */}
                 <motion.div variants={fadeIn} className="mt-10">
                   <h3 className="text-2xl font-bold text-white mb-6">Key Milestones</h3>
@@ -273,7 +255,7 @@ const About: NextPage = () => {
                   </div>
                 </motion.div>
               </motion.div>
-              
+
               {/* Social Media Links */}
               <motion.div
                 className="mt-12 p-6 bg-gray-800/60 backdrop-blur-md rounded-xl border border-accent/20 shadow-lg"
@@ -317,31 +299,6 @@ const About: NextPage = () => {
               </motion.div>
             </motion.div>
           </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-20 px-6 bg-gray-800">
-        <div className="max-w-4xl mx-auto text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-          >
-            <h2 className="text-4xl font-bold text-white mb-6">Interested in working together?</h2>
-            <p className="text-xl text-gray-300 mb-10">
-              Let's connect and discuss how we can collaborate on legal projects or research.
-            </p>
-            <motion.div
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <Link href="/contact" className="inline-block bg-accent text-gray-900 px-8 py-4 rounded-lg font-semibold shadow-lg hover:bg-amber-500 transition-all duration-300">
-                Get in Touch
-              </Link>
-            </motion.div>
-          </motion.div>
         </div>
       </section>
     </>
